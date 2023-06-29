@@ -1,0 +1,32 @@
+{
+  "name": "backend_architecture",
+  "version": "1.0.0",
+  "description": "This is a backend based on mysql and express framework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "dev:start": "nodemon server"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "mysql",
+    "expressjs",
+    "nodejs"
+  ],
+  "author": "Santosh Dhakal",
+  "license": "MIT license",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
