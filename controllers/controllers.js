@@ -1,4 +1,3 @@
-import mysql from "mysql";
 import db from "../index.js";
 
 //Connection to MySQL database
@@ -92,46 +91,5 @@ export const routeOutBound = (req, res) => {
   res.status(404).send("Route not found");
 };
 
-//authentication and authorization section only
 
-//authorize the subsiquent request after successful login or signup...
-export const authorizeUser = (req, res, next) => {
-  const token = req.cookies.access_token;
-  if (!token) {
-    return res.sendStatus(403);
-  }
-  try {
-    const data = jwt.verify(token, "YOUR_SECRET_KEY");
-    req.userId = data.id;
-    req.userRole = data.role;
-    return next();
-  } catch {
-    return res.sendStatus(403);
-  }
-};
 
-//chekcks for user in database and if found returns jwt cookie for further request
-export const authenticateUser = (req, res) => {
-  const username = req.body.username;
-  const password = req.body.password;
-
-  //hash the password before saving to database
-  const user = { username, password: hashedPassword };
-
-  const token = jwt.sign(user, "YOUR_SECRET_KEY");
-  return res
-    .cookie("access_token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-    })
-    .status(200)
-    .json({ message: "Logged in successfully 😊 👌" });
-};
-
-//clears the cookie session and user have to login again !!
-export const terminateUser = (req, res) => {
-  return res
-    .clearCookie("access_token")
-    .status(200)
-    .json({ message: "Successfully logged out 😏 🍀" });
-};

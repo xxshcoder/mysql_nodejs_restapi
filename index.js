@@ -3,7 +3,7 @@ import express from "express";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import expressRouter from "./routes/routes.js";
-import { authenticateUser, authorizeUser, routeOutBound, terminateUser } from "./controllers/controllers.js";
+import { routeOutBound } from "./controllers/controllers.js";
 
 //middleware section
 const app = express();
@@ -34,11 +34,7 @@ db.connect(function (err) {
 //all routes here;
 //TODO:add signup route to save users data
 
-// app.post("/signup",);
-app.post("/signup", authenticateUser);
-app.get("/logout", terminateUser);
-
-app.use("/employees", authorizeUser, expressRouter);
+app.use("/employees", expressRouter);
 app.all("*", routeOutBound);
 
 app.listen(PORT, () => {
