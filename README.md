@@ -8,20 +8,22 @@ This is a sample project demonstrating how to build a REST API using Node.js, Ex
 Before running this application, make sure you have the following prerequisites installed on your machine:
 
 - Node.js (version 12 or above)
-- MySQL database
+- MySQL database(Prefered Mariadb)
+- Bcrypt
+- Nodemon developer dependency
 
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/xxshcoder/mysql_nodejs_restapi.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd <project-directory>
+   cd mysql_nodejs_restapi
    npm install
    ```
 
@@ -43,9 +45,10 @@ Before running this application, make sure you have the following prerequisites 
 
    ```bash
    npm start
+   npm run dev:start
    ```
 
-   The server will start running on `http://localhost:<port-number>`.
+   The server will start running on `http://localhost:3000`.
 
 ## API Endpoints
 
@@ -54,8 +57,8 @@ The following API endpoints are available:
 - **GET /employees** - Retrieve all employees
 - **GET /employees/:id** - Retrieve an employee by ID
 - **POST /employees** - Create a new employee
-- **PUT /employees/:id** - Update an employee by ID
-- **DELETE /employees/:id** - Delete an employee by ID
+- **PUT /employees/update/:id** - Update an employee by ID
+- **DELETE /employees/delete/:id** - Delete an employee by ID
 
 ## Database Connection
 
