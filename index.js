@@ -1,7 +1,6 @@
 import mysql from "mysql";
 import express from "express";
 import { config } from "dotenv";
-import cookieParser from "cookie-parser";
 import expressRouter from "./routes/routes.js";
 import { routeOutBound } from "./controllers/controllers.js";
 
@@ -32,7 +31,6 @@ db.connect(function (err) {
 });
 
 //all routes here;
-//TODO:add signup route to save users data
 
 app.use("/api/v1/employees", expressRouter);
 app.all("*", routeOutBound);
