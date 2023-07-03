@@ -1,4 +1,4 @@
-![Nodejs and Mysql based Rest Api](https://i.imgur.com/fOUKO7G.jpg)
+![Nodejs and Mysql based Rest Api](.//public/images/mysql_rest_api.jpg)
 
 # REST API with Express, Nodejs and MySQL
 
