@@ -1,6 +1,6 @@
-# REST API with Express, Nodejs and MySQL
+![Nodejs and Mysql based Rest Api](http://stayregular.net/content/2-blog/20180306-make-a-nodejs-api-with-mysql/nodejs-mysql-api%400.4x.jpg)
 
-http://stayregular.net/content/2-blog/20180306-make-a-nodejs-api-with-mysql/nodejs-mysql-api%400.4x.jpg
+# REST API with Express, Nodejs and MySQL
 
 This is a sample project demonstrating how to build a REST API using Node.js, Express framework, and MySQL database.
 
