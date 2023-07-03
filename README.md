@@ -53,11 +53,11 @@ Before running this application, make sure you have the following prerequisites 
 
 The following API endpoints are available:
 
-- **GET /employees** - Retrieve all employees
-- **GET /employees/:id** - Retrieve an employee by ID
-- **POST /employees** - Create a new employee
-- **PUT /employees/update/:id** - Update an employee by ID
-- **DELETE /employees/delete/:id** - Delete an employee by ID
+- **GET /api/v1/employees** - Retrieve all employees
+- **GET /api/v1/employees/:id** - Retrieve an employee by ID
+- **POST /api/v1/employees** - Create a new employee
+- **PUT /api/v1/employees/update/:id** - Update an employee by ID
+- **DELETE /api/v1/employees/delete/:id** - Delete an employee by ID
 
 ## Database Connection
 
