@@ -1,6 +1,6 @@
 ![Nodejs and Mysql based Rest Api](.//public/images/mysql_rest_api.jpg)
 
-# REST API with Express, Nodejs and MySQL
+# REST API with Nodejs, Express and MySQL
 
 This is a sample project demonstrating how to build a REST API using Node.js, Express framework, and MySQL database.
 
