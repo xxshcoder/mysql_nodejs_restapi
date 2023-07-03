@@ -8,7 +8,7 @@ import {
   updateUserById,
 } from "../controllers/controllers.js";
 
-//all routes here
+//all employees routes here
 router.get("/", getUser);
 router.post("/", postUser);
 router.get("/:id", getUserById);

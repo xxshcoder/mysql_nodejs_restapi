@@ -34,7 +34,7 @@ db.connect(function (err) {
 //all routes here;
 //TODO:add signup route to save users data
 
-app.use("/employees", expressRouter);
+app.use("/api/v1/employees", expressRouter);
 app.all("*", routeOutBound);
 
 app.listen(PORT, () => {
