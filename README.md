@@ -55,11 +55,11 @@ Before running this application, make sure you have the following prerequisites 
 
 The following API endpoints are available:
 
-- **GET /api/v1/employees** - Retrieve all employees
-- **GET /api/v1/employees/:id** - Retrieve an employee by ID
-- **POST /api/v1/employees** - Create a new employee
-- **PUT /api/v1/employees/update/:id** - Update an employee by ID
-- **DELETE /api/v1/employees/delete/:id** - Delete an employee by ID
+- **GET /api/v1/employees** - Retrieve all USERS
+- **GET /api/v1/employees/:id** - Retrieve an USER by ID
+- **POST /api/v1/employees** - Create a new USER
+- **PUT /api/v1/employees/update/:id** - Update an USER by ID
+- **DELETE /api/v1/employees/delete/:id** - Delete an USER by ID
 
 ## Database Connection
 
@@ -69,11 +69,11 @@ The application establishes a connection to the MySQL database using the `mysql`
 
 The controllers in the `controllers.js` file handle the logic for each API endpoint. The available controller functions are:
 
-- `postUser` - Create a new employee
-- `getUser` - Retrieve all employees
-- `getUserById` - Retrieve an employee by ID
-- `updateUserById` - Update an employee by ID
-- `deleteUserById` - Delete an employee by ID
+- `postUser` - Create a new USER
+- `getUser` - Retrieve all USERS
+- `getUserById` - Retrieve an USER by ID
+- `updateUserById` - Update an USER by ID
+- `deleteUserById` - Delete an USRER by ID
 - `routeOutBound` - Handle 404 errors for undefined routes
 
 ## Contributing
